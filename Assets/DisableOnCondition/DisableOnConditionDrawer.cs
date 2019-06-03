@@ -25,7 +25,6 @@ public class DisableOnConditionDrawer : PropertyAdornerDrawer {
 
     public override void OnBeforeGUI(ref Rect position, ref GUIContent label) {
         EditorGUI.BeginDisabledGroup(condition());
-        GUI.matrix = Matrix4x4.Rotate(Quaternion.Euler(2, 0, 0)) * GUI.matrix;
     }
 
     public override void OnAfterGUI(Rect position) {
