@@ -1,10 +1,10 @@
 ﻿public delegate bool BoolDelegate();
 
-public class DisableOnConditionAttributeAttribute : PropertyAdornerAttribute {
+public class DisableOnConditionAttribute : PropertyAdornerAttribute {
 
     public readonly string condition;
 
-    public DisableOnConditionAttributeAttribute(string condition) {
+    public DisableOnConditionAttribute(string condition) {
         this.condition = condition;
     }
 }

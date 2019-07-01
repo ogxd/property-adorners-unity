@@ -6,7 +6,13 @@ public enum ComputationMethod {
     Manual
 }
 
-public class ScriptWithoutEditor : MonoBehaviour {
+public class SampleScript : MonoBehaviour {
+
+    [Readonly]
+    public int value1 = 125;
+
+    [Readonly]
+    public float value2 = 138452.2f;
 
     public bool useAutomaticParameters = true;
 

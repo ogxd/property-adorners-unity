@@ -3,14 +3,14 @@ using UnityEditor;
 using System;
 using System.Reflection;
 
-[CustomPropertyDrawer(typeof(DisableOnConditionAttributeAttribute), true)]
+[CustomPropertyDrawer(typeof(DisableOnConditionAttribute), true)]
 public class DisableOnConditionDrawer : PropertyAdornerDrawer {
 
     private BoolDelegate _condition;
     public BoolDelegate condition {
         get {
             if (_condition == null) {
-                string methodStr = (attribute as DisableOnConditionAttributeAttribute).condition;
+                string methodStr = (attribute as DisableOnConditionAttribute).condition;
                 var methodInfo = targetObject.GetType().GetMethod(methodStr,
                     BindingFlags.Static | BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public);
                 if (methodInfo == null)

@@ -337,9 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a378e20ec166c342b6e0a2456bada87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showClustered: 1
-  sampleSize: 355
-  spaceSize: 5
-  clustersCount: 39
-  iterations: 38
-  abc: 1
+  useAutomaticParameters: 0
+  method: 0
+  count: 3
+  colorHDR: {r: 0, g: 0, b: 0, a: 0}
